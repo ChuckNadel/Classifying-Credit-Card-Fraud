@@ -17,14 +17,14 @@ Due to the size of this dataset, I was only able to create and run 2 models. Our
 
 I optmized my two models for recall score, as we were tasked with catching as many fraudelent purchases as possible, with less regard for false positives. Our optimized logistic regression gave us a recall score of 0.865, with a false positive rate of 0.31, as shown by the following confusion matrix. 
 <p align="center">
-  <img src = images/ConfusionMatrixLogReg.png width="500" height="500">
+  <img src = images/ConfusionMatrixLogReg.png width="750" height="500">
 </p>
 While I mentioned before that we did not care too much about false positives, this screener is quite bad, as we do not want to mark over 30% of purchases as potentially fraudelent, unnesesarily bothering our customers.
 
 On the other hand, our decision tree classifier did a great job classifying fraudulent vs non-fradulent purchases, with a recall score of 0.932, and a false positive rate of 0.03, as shown by this confusion matrix. 
 
 <p align="center">
-  <img src = images/ConfusionMatrixDT.png width="500" height="500">
+  <img src = images/ConfusionMatrixDT.png width="750" height="500">
 </p>
 
 It is clear that our decision tree classifier would be a much more effective screener for fraud, as it was able to acheive a 7% higher recall score, with a false postive rate 27% lower.
